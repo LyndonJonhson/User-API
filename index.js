@@ -10,6 +10,8 @@ app.use(bodyParser.json())
 
 app.use("/", router);
 
-app.listen(8686,() => {
+const PORT = process.env.PORT || 8686;
+
+app.listen(PORT,() => {
     console.log("Servidor rodando")
 });
